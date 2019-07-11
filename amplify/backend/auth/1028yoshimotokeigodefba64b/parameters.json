@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "1028yoshimotokeigodefba64b_identitypool_defba64b",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "1028yo_defba64b_lambda_log_policy",
+    "openIdLambdaRoleName": "1028yo_defba64b_openid_lambda_role",
+    "openIdRolePolicy": "1028yo_defba64b_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "1028yo_defba64b_openid_lambda_iam_policy",
+    "openIdLogPolicy": "1028yo_defba64b_openid_lambda_log_policy",
+    "userPoolName": "1028yoshimotokeigodefba64b_userpool_defba64b",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "1028yodefba64b_sns-role",
+    "roleExternalId": "1028yodefba64b_role_external_id",
+    "policyName": "1028yodefba64b-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "1028yodefba64b_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "1028yodefba64b_totp_lambda_role",
+    "mfaLambdaLogPolicy": "1028yodefba64b_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "1028yodefba64b_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "1028yodefba64b_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "1028yodefba64b_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "1028yodefba64b_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "1028yodefba64b_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "1028yoshimotokeigodefba64b",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}

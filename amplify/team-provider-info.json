@@ -1,0 +1,19 @@
+{
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "a1028yoshimotokeigo-master-20190711171621-authRole",
+            "UnauthRoleArn": "arn:aws:iam::258394178435:role/a1028yoshimotokeigo-master-20190711171621-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::258394178435:role/a1028yoshimotokeigo-master-20190711171621-authRole",
+            "Region": "ap-northeast-1",
+            "DeploymentBucketName": "a1028yoshimotokeigo-master-20190711171621-deployment",
+            "UnauthRoleName": "a1028yoshimotokeigo-master-20190711171621-unauthRole",
+            "StackName": "a1028yoshimotokeigo-master-20190711171621",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:258394178435:stack/a1028yoshimotokeigo-master-20190711171621/2aa380f0-a3b4-11e9-8244-06219e647854"
+        },
+        "categories": {
+            "auth": {
+                "1028yoshimotokeigodefba64b": {}
+            }
+        }
+    }
+}
